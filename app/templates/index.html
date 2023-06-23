@@ -150,7 +150,7 @@
                 res = json["result"];
                 err = json["err"];
                 if (err != "") {
-                    categoryEn = categoryRu = categoryRow.innerText = `<!Ошибка при попытке классификации: ${err}!>`;
+                    categoryRu = categoryEn = categoryRow.innerText = `<!Ошибка при попытке классификации: ${err}!>`;
                 }
                 else {
                     categoryRu = res["ru"];
