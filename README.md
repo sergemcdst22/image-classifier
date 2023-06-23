@@ -14,7 +14,7 @@
 
 ## Установка
 
-1) Откройте терминал в Linux/Mac или PowerShell в Windows
+1. Откройте терминал в Linux/Mac или PowerShell в Windows
 
    Скопируйте код проекта из репозитория
 
@@ -23,7 +23,9 @@
   cd image-classifier
 ```
 
-2а) Запустите  с помощью uvicorn:
+Далее возможны два варианта:
+
+2. Запустите  с помощью uvicorn:
 
 ```bash
   python -m venv venv (возможно, понадобится ввести py или python3 - на Windows и Linux соответственно)
@@ -34,7 +36,8 @@
   uvicorn main:app --reload --port 80
 ```
 
-2б) Либо запустите в Docker
+
+2. Либо запустите в Docker
 ```bash
   docker build -t classifier-img .
   docker run -d --restart always --name classifier -p 80:80 classifier-img
