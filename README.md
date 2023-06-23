@@ -19,16 +19,16 @@
    Скопируйте код проекта из репозитория
 
 ```bash
-  git clone https://github.com/bhimrazy/Image-Recognition-App-using-FastAPI-and-PyTorch
-  cd Image-Recognition-App-using-FastAPI-and-PyTorch
+  git clone https://github.com/sergemcdst22/image-classifier.git
+  cd image-classifier
 ```
 
 2а) Запустите  с помощью uvicorn:
 
 ```bash
-  python -m venv venv (возможно, понадобится ввести py или python3, в зависимости от ОС)
+  python -m venv venv (возможно, понадобится ввести py или python3 - на Windows и Linux соответственно)
   source venv/bin/activate (на Windows вместо этой команды введите venv/Scripts/activate)
-  pip install -r requirements.txt
+  pip3 install -r requirements.txt
   pip3 install torch torchvision (на Linux добавьте в конец этой команды --index-url https://download.pytorch.org/whl/cpu)
   cd app
   uvicorn main:app --reload --port 80
